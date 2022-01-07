@@ -60,3 +60,4 @@ The articles listed above establish an important hierarchy of values.
 
 ### My Comments on the Practice
 * Agile is often used to justify no up-front design. THis encourages stream of consciousness programming that can be very inefficient. Agile merely suggests that you dont do all your design before you start writing any code. Developers thinking about the problem divorced from their keyboards is a very valuable abstraction process.
+* Agile teams should be inherently democratic and this poses several problems with individual developer obsessions and the conflict that ensures therein. Opinionated developers empowered to drive change require a strong oversight culture that could be at odds with the anarchic 'self-organisation' principle.
