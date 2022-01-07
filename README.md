@@ -11,18 +11,18 @@ This suffered from frequent failures. Issues with software delivered atomically 
 ## Agile Manifesto
 https://agilemanifesto.org/
 
-We are uncovering better ways of developing software by doing it and helping others do it.
+*We are uncovering better ways of developing software by doing it and helping others do it.*
 
-Through this work we have come to value:
+*Through this work we have come to value:*
 
 | | Value | | Greater Value |
 | --- | --- | --- | --- |
-| A1 | Individuals and interactions | over | Processes and tools |
-| A2 | Working software | over | Comprehensive documentation |
-| A3 | Customer collaboration | over | Contract negotiation |
-| A4 | Responding to change | over | Following a plan |
+| A1 | *Individuals and interactions* | over | *Processes and tools* |
+| A2 | *Working software* | over | *Comprehensive documentation* |
+| A3 | *Customer collaboration* | over | *Contract negotiation* |
+| A4 | *Responding to change* | over | *Following a plan* |
 
-That is, while there is value in the items on the right, we value the items on the left more.
+*That is, while there is value in the items on the right, we value the items on the left more.*
 
 ### My Comments
 The articles listed above establish an important hierarchy of values.
@@ -34,18 +34,18 @@ The articles listed above establish an important hierarchy of values.
 
 | | Principle |
 | --- | --- |
-| AP1 | Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.  |
-| AP2 | Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage. |
-| AP3 | Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale. |
-| AP4 | Business people and developers must work together daily throughout the project. |
-| AP5 | Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done. |
-| AP6 | The most efficient and effective method of conveying information to and within a development team is face-to-face conversation. |
-| AP7 | Working software is the primary measure of progress. |
-| AP8 | Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely. |
-| AP9 | Continuous attention to technical excellence and good design enhances agility. |
-| AP10 | Simplicity--the art of maximizing the amount of work not done--is essential. |
-| AP11 | The best architectures, requirements, and designs emerge from self-organizing teams. |
-| AP12 | At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly. |
+| AP01 | *Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.*  |
+| AP02 | *Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.* |
+| AP03 | *Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.* |
+| AP04 | *Business people and developers must work together daily throughout the project.* |
+| AP05 | *Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.* |
+| AP06 | *The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.* |
+| AP07 | *Working software is the primary measure of progress.* |
+| AP08 | *Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.* |
+| AP09 | *Continuous attention to technical excellence and good design enhances agility.* |
+| AP10 | *Simplicity--the art of maximizing the amount of work not done--is essential.* |
+| AP11 | *The best architectures, requirements, and designs emerge from self-organizing teams.* |
+| AP12 | *At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.* |
 
 ### My Comments on the Principles
 * AP1,AP3 reflect the need to integrate as soon as possible which is epecially important for complex systems composed of multiple services to minimise risk later on.
