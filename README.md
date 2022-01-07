@@ -28,7 +28,7 @@ That is, while there is value in the items on the right, we value the items on t
 The articles listed above establish an important hierarchy of values.
 * A1 and A3 emphasise the engagement of individuals (which is elaborated further in the Agile Principles below)
 * A2 seems like an odd juxtapostion to us now but perhaps reflecting the old days when user manuals were more in vogue.
-* A4 relates to A3 and the increased iterative flow of information between customer and delivery team. As a general point it clearly addresses the issue of requirement refinement but how the nature of that response requires nuance (more below).
+* A4 relates to A3 and the increased iterative flow of information between customer and delivery team. As a general point it clearly addresses the issue of requirement refinement but how the nature of that response is determined requires nuance (more below).
 
 ### Agile Manifesto Principles
 
