@@ -1,6 +1,6 @@
 # Agile
 
-Agile has been proposed as an alternative to the Waterfall development process where design and delivery are non-overalapping serially executed steps.
+Agile has been proposed as an alternative to the Waterfall development process where design and delivery are serially executed steps.
 
 This suffered from frequent failures. Issues with software delivered atomically into Production at the end of the project would include it
 
