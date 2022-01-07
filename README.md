@@ -59,3 +59,4 @@ The articles listed above establish an important hierarchy of values.
 * AP12 - yes. Often implemented  as sprint retrospectives.
 
 ### My Comments on the Practice
+* Agile is often used to justify no up-front design. THis encourages stream of consciousness programming that can be very inefficient. Agile merely suggests that you dont do all your design before you start writing any code. Developers thinking about the problem divorced from their keyboards is a very valuable abstraction process.
