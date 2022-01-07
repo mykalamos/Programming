@@ -8,7 +8,6 @@ This suffered from frequent failures. Issues with software delivered atomically 
 1. Not delivering i.e. not doing what the customer wanted
 1. Failing non-functional requirements e.g. performance
 
-
 ## Agile Manifesto
 https://agilemanifesto.org/
 
@@ -26,7 +25,10 @@ Through this work we have come to value:
 That is, while there is value in the items on the right, we value the items on the left more.
 
 ### My Comments
-TBD
+The articles listed above establish an important hierarchy of values.
+* A1 and A3 emphasise the engagement of individuals (which is elaborated further in the 13 principles)
+* A2 seems like an odd juxtapostion to us now but perhaps reflecting the old days when user manuals were more in vogue.
+* A4 relates to A3 and the increased iterative flow of information between customer and delivery team.
 
 ### Agile Manifesto Principles
 
