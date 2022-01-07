@@ -10,6 +10,26 @@ This suffered from frequent failures. Issues with software delivered atomically 
 
 
 ## Agile Manifesto
+https://agilemanifesto.org/
 
-| hello | hadfd |
-| hello | hadfd |
+We are uncovering better ways of developing software by doing it and helping others do it.
+
+Through this work we have come to value:
+
+| | Value | | Greater Value |
+| --- | --- | --- | --- |
+| A1 | Individuals and interactions | over | Processes and tools |
+| A2 | Working software | over | Comprehensive documentation |
+| A3 | Customer collaboration | over | Contract negotiation |
+| A4 | Responding to change | over | Following a plan |
+
+That is, while there is value in the items on the right, we value the items on the left more.
+
+### My Comments
+TBD
+
+### Agile Manifesto Principles
+
+| foo | bar |
+| --- | --- |
+| baz | bim |
