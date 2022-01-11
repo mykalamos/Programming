@@ -1,10 +1,12 @@
+
+# What is a Thread
+- An independent path/unit of execution.
+
+# Multitasking
 - Ability of an operations to execute different parts of programs (threads) simultaneously on same processor.
 
 # Multitasking
 - Execution of multiple tasks simultaneously (as opposed to multithreading)
-
-What is a Thread ?
-- An independent unit of execution.
 
 Did VB6 support multi-threading ? - No
 Can we have multiple threads in one App domain ? - Yes
@@ -52,18 +54,12 @@ Multi-threading
 - new Thread( new ThreadStart(this.function));
 - thread.Start(); thread.IsAlive();
 
-What’s difference between thread and process?
-Process
-- virtual memory space
-- code
-- data
-- system resources.
-- primary thread
+# Difference between thread and process?
+| Process | Thread |
+| --- | --- |
+| Virtual memory space | Code that is to be serially executed within a process|
+| Code | Threads executing the same block of code maintain separate stacks. Invocations are kept separate|
+| Data | Each thread in a process shares that process?s global variables andresources|
+| System resources | A processor executes threads, not processes|
+| Primary thread | |
 
-Thread
-- Code that is to be serially executed within a process.
-- A processor executes threads, not processes
-- Threads executing the same block of code maintain separate stacks -
-invocations are kept separate.
-- Each thread in a process shares that process?s global variables and
-resources.
