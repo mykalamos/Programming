@@ -1,8 +1,7 @@
-#Multitasking
-- Execution of multiple tasks simultaneously (as opposed to multithreading)
-
-What is Multi-threading ?
 - Ability of an operations to execute different parts of programs (threads) simultaneously on same processor.
+
+# Multitasking
+- Execution of multiple tasks simultaneously (as opposed to multithreading)
 
 What is a Thread ?
 - An independent unit of execution.
