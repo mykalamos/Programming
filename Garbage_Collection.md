@@ -8,6 +8,22 @@ Problem
 
 - Only the garbage collector deallocates memory. Simpler for the developer.
 
+Solution
+--------
+- Garbage Collector
+- Developer does not have free memory
+- Efficient allocation on heap
+- Memory reclamation
+- Memory safety - objects cant access allocation of anoher object
+
+Virtual Memory
+--------------
+- Each process has own virtual address space
+- 3 states
+  - Free
+  - Reserved
+  - Committed - assigned to physical storage
+
 Managed heap
 ------------
 - When a process is initialized, the runtime reserves a contiguous region of
@@ -19,11 +35,17 @@ to be allocated.
 
 Roots
 -----
-- e.g. Globals, Statics, Locals, CPU Registers, FReachable
+- e.g. Globals, Statics, Locals, CPU Registers, Finalize queue
 - Object graph constructed.
 - Heap traversed linearly looking for contiguous blocks of collectable
 objects.
-- Memory shifted using memcpy. Roots need to be rewired.
+- Memory shifted using memcpy. Roots need to be rewired following compaction.
+- Compaction only occurs if significant unreachable objects found
+
+Large Object Heap
+-----------------
+- Performance optimisation
+- Usually not compacted for efficiency
 
 Finalization
 -------------
