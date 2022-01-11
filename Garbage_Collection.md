@@ -11,7 +11,7 @@ Problem
 Solution
 --------
 - Garbage Collector
-- Developer does not have free memory
+- Developer does not have to free memory
 - Efficient allocation on heap
 - Memory reclamation
 - Memory safety - objects cant access allocation of anoher object
@@ -46,6 +46,23 @@ Large Object Heap
 -----------------
 - Performance optimisation
 - Usually not compacted for efficiency
+
+Managed Heap
+------------
+- Divided into 3 generations 0,1 (Ephemeral) and ,2.
+- Assumptions
+  1. Faster to compact memory for a part of the heap rather than the whole
+  2. Newer objects have shorter lifetimes than older ones
+  3. Newer objects tend to be related to each other and accessed at around the same time
+- GC tends to run when Gen0 is full.
+- Surviving objects are promoted to Gen1 and 2.
+
+Background garbage collection
+-----------------------------
+- Replaces concurrent gc from net4 
+- From net45 background gc available on server and workstation
+- Foreground gc = 0,1. All threads suspended
+- Background does not suspend all threads
 
 Finalization
 -------------
