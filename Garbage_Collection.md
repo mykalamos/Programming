@@ -19,7 +19,7 @@ to be allocated.
 
 Roots
 -----
-- e.g. Globals, Statics, Locals, CPU Registers.
+- e.g. Globals, Statics, Locals, CPU Registers, FReachable
 - Object graph constructed.
 - Heap traversed linearly looking for contiguous blocks of collectable
 objects.
