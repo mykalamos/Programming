@@ -11,7 +11,11 @@
 
 ## Inheritance
 - New objects take on characteristics of another
-- Replaced by composition ?
+- Reuse of existing code - Replaced by composition ?
+
+### Advantages of Composition
+- Reuse not tied to creational of hierarchical trees of types
 
 ## Polymorphism
+- Provision of a single interface to entities of different types
 - Redefine methods for derived classes
