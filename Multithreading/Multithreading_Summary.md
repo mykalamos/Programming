@@ -7,7 +7,7 @@
 
 # Uses
 - UI Responsiveness
-- Efficient use of CPU due to blocking
+- Efficient use of CPU when blocking occurs
 - Parallel computing - cpu intensive calculations
 - Speculative execution
 - Simultaneous request processing
