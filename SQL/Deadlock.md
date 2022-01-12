@@ -18,7 +18,7 @@ It could also be a situation in which two computer programs sharing the same res
 
 ## Strategies for dealing with Deadlock
 
-- ignore the problem altogether ie. ostrich algorithm it may occur very infrequently, cost of detection/prevention etc may not be worth it.
+- Ignore the problem altogether ie. ostrich algorithm it may occur very infrequently, cost of detection/prevention etc may not be worth it.
 - detection and recovery
 - avoidance by careful resource allocation
 - prevention by structurally negating one of the four necessary conditions. 
