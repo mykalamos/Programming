@@ -15,6 +15,7 @@
 
 ### Advantages of Composition
 - Reuse not tied to creational of hierarchical trees of types
+- Avoids Fragile Base Class Problem
 
 ## Polymorphism
 - Provision of a single interface to entities of different types
