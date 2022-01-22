@@ -52,8 +52,9 @@ Managed Heap
 - Divided into 3 generations 0,1 (Ephemeral) and ,2.
 - Assumptions
   1. Faster to compact memory for a part of the heap rather than the whole
-  2. Newer objects have shorter lifetimes than older ones
-  3. Newer objects tend to be related to each other and accessed at around the same time
+  2. Newer objects tend to have following:
+    1. Shorter lifetimes than older ones
+    2. Related to each other and accessed at around the same time
 - GC tends to run when Gen0 is full.
 - Surviving objects are promoted to Gen1 and 2.
 
@@ -82,7 +83,7 @@ memory.
 What causes Finalize methods to be called
 ------------------------------------------
 1. Generation 0 is full
-2. System.GC.Collect() called explicitly
+2. ```System.GC.Collect()``` called explicitly
 3. CLR unloading AppDomain - nothing therein considered a root
 4. CLR shuts down
 
