@@ -53,8 +53,8 @@ Managed Heap
 - Assumptions
   1. Faster to compact memory for a part of the heap rather than the whole
   2. Newer objects tend to have following:
-    1. Shorter lifetimes than older ones
-    2. Related to each other and accessed at around the same time
+    - Shorter lifetimes than older ones
+    - Related to each other and accessed at around the same time
 - GC tends to run when Gen0 is full.
 - Surviving objects are promoted to Gen1 and 2.
 
@@ -72,7 +72,7 @@ Finalization
 - Allocation takes longer as pointers get put on finalization list/queue.
 - During a GC reclaimable object have the references removed from
 finalization list and placed on freachable queue.
-- Dedicated special high-priority CLR thread calls finalize (avoid thread
+- Dedicated special high-priority CLR thread calls finalize (avoids thread
 synchronisation issues).
 - Assumptions about the current thread should therefore be avoided in
 finalize methods.
@@ -90,7 +90,7 @@ What causes Finalize methods to be called
 Dispose pattern
 ---------------
 - Any type defining a Finalize should implement the Dispose pattern.
-- Dispose would call GC.SupressFinalize(this);
+- Dispose would call ```GC.SupressFinalize(this)```
 - If disposing is occuring it is safe to access managed resources and their
 finalisers will not have been called.
 
