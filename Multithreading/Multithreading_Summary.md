@@ -32,7 +32,6 @@ delegate void AutomationDelegate();
 4. invoke with delgate.BeginInvoke(callback, null);
 
 ## Multi-threading example
------------------------
 - new Thread( new ThreadStart(this.function));
 - thread.Start(); thread.IsAlive();
 
@@ -50,3 +49,22 @@ delegate void AutomationDelegate();
 | System resources | A processor executes threads, not processes|
 | Primary thread | |
 
+## Thread Pool
+- Collection of worker threads created at start up
+- Assigned work then returned to pool
+- No thread creation overhead
+
+## Thread states
+1. New
+2. Runnable
+3. Running
+4. Waited/Blocked
+5. Dead/Terminated
+
+## Race condition / data race
+- Race condition - Semantic error - Flaw from timing ordering of events
+- Data race - 2+ instructions access same memory with at least one write and on synchronisation
+
+## Thread Scheduler
+- Allocation of CPU time (time slices)
+- Determines order of thread execution
