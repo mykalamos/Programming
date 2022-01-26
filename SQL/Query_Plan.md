@@ -23,26 +23,26 @@ Only Create Index produces a showplan with a statistics profile. None produce a 
 
 ________________________________________
 
-Poor indexing
+### Poor indexing
 - Indexes to serve the need of the queries.
 
-Inaccurate statistics
+### Inaccurate statistics
 - Need accurate estimates as to the amount of data to be retrieved.
 
-Excessive blocking and deadlocks
+### Excessive blocking and deadlocks
 
-Poor query design
+### Poor query design
 
-Poor database design
+### Poor database design
 
-Excessive fragmentation
+### Excessive fragmentation
 
-Nonreusable execution plans
+### Nonreusable execution plans
 
-Frequent recompilation of execution plans
+### Frequent recompilation of execution plans
 
-Improper use of cursors
+### Improper use of cursors
 
-Improper configuration of the database log
+### Improper configuration of the database log
 
-Ineffective connection pooling 
+### Ineffective connection pooling 
