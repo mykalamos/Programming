@@ -1,13 +1,13 @@
 To be used in a foreach construct a type must
 
-- Implement the IEnumerable interface which exposes the following member
+- Implement the ```IEnumerable``` interface which exposes the following member
 
 ```IEnumerator GetEnumerator()```
 
-IEnumerator has the following members:
-- ```bool MoveNext()```
-- ```object Current {get;}```
-- ```void Reset()```
+### IEnumerator members
+1. ```bool MoveNext()```
+1. ```object Current {get;}```
+1. ```void Reset()```
 
 - Enumerator remains valid unless elements are added, modified, or deleted.
 - Next call to MoveNext or Reset throws an InvalidOperationException. 
