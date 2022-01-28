@@ -25,3 +25,8 @@ public IsNew isNew;
 - ```BeginInvoke()```
 - ```EndInvoke()```
 - ```Invoke```
+
+# Generics
+- ```Action``` - void return type
+- ```Func``` - final param out ie output
+- ```Predicate``` - ``` public delegate bool Predicate<in T>(T obj) ```
