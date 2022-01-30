@@ -5,4 +5,6 @@ https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/
   1. objects (LINQ to Objects)
   2. relational databases (LINQ to SQL)
   3. XML (LINQ to XML)
-- 
+- Syntaxes
+  1. Query
+  2. Method
