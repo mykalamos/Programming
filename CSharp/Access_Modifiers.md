@@ -1,5 +1,5 @@
 # Access Modifiers
-
+https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers
 | Modifier | Scope |
 | --- | --- |
 | ```public``` | All |
@@ -7,4 +7,4 @@
 | ```protected``` | Same type or derived |
 | ```internal``` | Same assembly |
 | ```protected internal``` | Same assembly or derived |
-| ```private internal``` | Derived in same assembly |
+| ```private protected``` | Derived in same assembly |
