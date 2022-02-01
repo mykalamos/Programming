@@ -79,4 +79,26 @@ https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?WT.mc_id=dotnet-35129-
   - globally
 - Several filters (such as Authorize) are included in the framework
 
+## Areas
+- Partition large web app
+
+## Web API
+- HTTP content-negotiation with built-in support to format data as JSON or XML
+- Custom formatters
+- Support for cross-origin resource sharing (CORS)
+
+## Testability
+- TestHost
+- InMemory provider for EF
+
+## Razor
+- Renders views
+- Template markup language using embedded C#
+- Layouts
+- Partial Views
+
+## Strongly typed Views
+- Controllers can pass to strongly typed model to View
+- Intellisense
+- Type checking
 
