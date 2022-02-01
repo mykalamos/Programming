@@ -63,3 +63,20 @@ https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?WT.mc_id=dotnet-35129-
   - Client side
   - Server side
  ... before the controller action is called.
+
+## Dependency Injection
+- @inject directive for views
+
+## Filters
+- Encapsulate cross-cutting concerns
+  - Authorization
+  - Exception Handling
+- Enable running custom pre- and post-processing logic
+- Can be configured to run at certain points within the execution pipeline
+- Can be applied to
+  - controllers
+  - actions
+  - globally
+- Several filters (such as Authorize) are included in the framework
+
+
