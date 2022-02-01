@@ -102,3 +102,5 @@ https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?WT.mc_id=dotnet-35129-
 - Intellisense
 - Type checking
 
+## Tag Helpers
+- Enable server code to render HTML in Razor
