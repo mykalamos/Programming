@@ -36,3 +36,23 @@ https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?WT.mc_id=dotnet-35129-
 - Handle user interaction - intial entry point
 - Work with the model
 - Select a view to render
+
+## Routing
+- URL mapping
+- Route template syntax
+  - route value constraints
+  - defaults
+  - optional values
+### Convention-based routing
+  - Globally define the URL formats that your application accepts and how each of those formats maps to a specific action method on a given controller.
+  - Incoming request ➡️ routing engine ➡️ defined URL formats ➡️ controller's action method
+### Attribute routing
+- Decorating controllers and actions with attributes that define your application's routes
+
+## Model binding
+- Converts client request data the controller can handle
+  - form values
+  - route data
+  - query string parameters,
+  - HTTP headers
+ - Data as parameters to its action methods
