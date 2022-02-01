@@ -56,3 +56,10 @@ https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?WT.mc_id=dotnet-35129-
   - query string parameters,
   - HTTP headers
  - Data as parameters to its action methods
+
+## Model Validation
+- Validation by decorating model object with data annotation validation attributes.
+- Attributes checked on
+  - Client side
+  - Server side
+ ... before the controller action is called.
