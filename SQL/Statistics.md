@@ -6,7 +6,7 @@ https://docs.microsoft.com/en-us/sql/relational-databases/statistics/statistics?
 - BLOBs - distribution of data in a table/indexed view
 - QO estimates based on this
   - Cardinality: Number of rows in query
-  - Helps to select Index seek rather than Index can
+  - Helps to select ```Index Seek``` rather than ```Index Scan```
 
 - Each stats object includes
   - a histogram of data distribution in first column
