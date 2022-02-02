@@ -6,3 +6,4 @@ https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/
 - Methods not allowed (use extension method)
 - Default value of Enum E is (E)0 even if 0 is not defined in E.
 - V7.3 type constraint
+- \[Flags\] - ```ToString()``` symbolic rendering rather than integral type
