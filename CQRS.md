@@ -33,5 +33,41 @@ https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
   - Read data
   - Never modify
   - DTO contains no business logic
-- Disadvantage 
+- Disadvantage - cant autogenerate via ORM
+- Greater isolation => Separates read and write datastores
+  - Materialised view of to avoid complex joins
+  - Different store types
+    - R = Document
+    - W = Relational
+    - Requires synchronisation - Write model publishes an event.
+    - Write and publish must be a transaction
+    - Multiple read stores for distributed scenarios
+- Event Sourcing
+  - App state stored as sequence of events
+  - Current state is constructed by replay
+  - Same events can be used to notify the read model
 
+## Benefits
+- Independent Scaling
+- Optimsed data schema - appropriate for read and write
+- Security - only entitled entities creating writes
+- Separation of concerns
+- Simpler queries - materialised views
+
+# Implementation issues
+- Increased complexity esp if with Event Sourcing
+- Messaing 
+- Eventual consistency - stale reads
+
+# When to use
+- Collaborative domains - many users accessing data in parallel
+  - Minimise merge conflicts, command can resolve them
+- Task based user interfaces
+- Data reads require extra performance
+
+# Event sourcing and CQRS
+- Using a stream avoids conflicts and maximises performance and scalability
+- Asynchronous build of read data
+- Event stream definitive view of data
+  - Materialised views can be regenerated
+  - Read view is a durable, read-only cache
