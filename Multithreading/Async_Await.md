@@ -1,16 +1,15 @@
 # Task Asynchronous Programming model (TAP)
 - Code as sequence of statements
 - But executes based on 
-  -  external resource allocation
-  -  when task finish
+  -  External resource allocation
+  -  When task(s) finish
 
 ## Await
-- Non blocking way to start asynchronous action.
+- Non blocking way to start asynchronous action in a synchronous fashion
 - Containing method must be marked ```async```
 
 ## Exceptions
 - ```Task.Exception``` Property = ```AggregateException```
-
 
 ## Efficient await
 - ``` Task.WaitAll```
