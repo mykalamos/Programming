@@ -46,6 +46,7 @@ Large Object Heap
 -----------------
 - Performance optimisation
 - Usually not compacted for efficiency
+  - 85000 bytes deemed cut-off point
 
 Managed Heap
 ------------
