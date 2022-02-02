@@ -1,4 +1,4 @@
-# Command and Query Reponsibility Segregation
+# Command and Query Responsibility Segregation
 https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
 - Separates for a data store
   - Read
