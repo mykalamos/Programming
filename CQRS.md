@@ -49,7 +49,7 @@ https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
 
 ## Benefits
 - Independent Scaling
-- Optimsed data schema - appropriate for read and write
+- Optimised data schema - appropriate for read and write
 - Security - only entitled entities creating writes
 - Separation of concerns
 - Simpler queries - materialised views
