@@ -3,7 +3,6 @@
 ## Problem
 - Forgetting to free up memory
 - Trying to access memory after it has been freed
-
 - Only the garbage collector deallocates memory. Simpler for the developer.
 
 ## Solution
