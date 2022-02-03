@@ -1,7 +1,8 @@
 # Test Driven Development
 http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 1. No production code unless to make a failing unit test pass.
-2. No more of a unit test than is sufficient to fail; and compilation failures are failures.
+2. No more of a unit test than is sufficient to fail
+  - compilation failures are failures.
 3. No more production code than is sufficient to pass the one failing unit test.
 
 - Red Green Blue
