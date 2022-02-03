@@ -45,9 +45,9 @@ objects.
 - Divided into 3 generations 0,1 (Ephemeral) and ,2.
 - Assumptions
   1. Faster to compact memory for a part of the heap rather than the whole
-  2. Newer objects tend to have following:
-    - Shorter lifetimes than older ones
-    - Related to each other and accessed at around the same time
+  2. Newer objects tend to
+    - Have shorter lifetimes than older ones
+    - Be related to each other and accessed at around the same time
 - GC tends to run when Gen0 is full.
 - Surviving objects are promoted to Gen1 and 2.
 
@@ -61,15 +61,12 @@ objects.
 - For resources that wrap unmanaged resources e.g. file, mutex
 - Finalizable objects and their graphs get promoted to older generations.
 - Allocation takes longer as pointers get put on finalization list/queue.
-- During a GC reclaimable object have the references removed from
-finalization list and placed on freachable queue.
-- Dedicated special high-priority CLR thread calls finalize (avoids thread
-synchronisation issues).
-- Assumptions about the current thread should therefore be avoided in
-finalize methods.
-- Freachable queue considered a root so objects can't be reclaimed. After
-finalizers on queue have been executed subsequent sweeps can reclaim the
-memory.
+- During a GC, reclaimable objects moved from finalization list ➡️ freachable queue.
+- Dedicated special high-priority CLR thread calls ```Finalize```
+  - Avoids thread synchronisation issues
+  - So avoid assumptions about the current thread in ```Finalize``` methods
+- Freachable queue considered a root so objects can't be reclaimed.
+- After finalizers on queue have been executed subsequent sweeps can reclaim the memory.
 
 ## What causes Finalize methods to be called
 1. Generation 0 is full
