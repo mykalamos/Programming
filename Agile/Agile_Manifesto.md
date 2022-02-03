@@ -15,7 +15,7 @@ https://agilemanifesto.org/
 
 *Through this work we have come to value:*
 
-| | Value | | Greater Value |
+| | Greater Value | |  Value |
 | --- | --- | --- | --- |
 | A1 | *Individuals and interactions* | over | *Processes and tools* |
 | A2 | *Working software* | over | *Comprehensive documentation* |
