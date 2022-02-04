@@ -4,7 +4,7 @@ https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
 Well designed API should support
 1. Platform independence - agnostic to API implementation. 
   - Agree on data exchange format
-3. Service evolution - API add functionality independent of client.
+2. Service evolution - API add functionality independent of client.
   - Discoverable by client
 
 ## What is REST
