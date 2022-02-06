@@ -71,10 +71,16 @@ https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/large-object
 - If it takes two cycles to clear one byte, it takes 170,000 cycles to clear the smallest large object.
 - Clearing the memory of a 16-MB object on a 2-GHz machine takes approximately 16 ms. That's a rather large cost.
 
-### Collection cost.
+### Collection cost
+- The LOH and gen2 are collected together, if either one's threshold is exceeded
+- If gen2 is large, it can cause performance problems if many gen2 GCs are triggered
+- If many large objects are allocated on a temporary basis and you have a large SOH, you could be spending too much time doing GCs.
 
-    Because the LOH and generation 2 are collected together, if either one's threshold is exceeded, a generation 2 collection is triggered. If a generation 2 collection is triggered because of the LOH, generation 2 won't necessarily be much smaller after the GC. If there's not much data on generation 2, this has minimal impact. But if generation 2 is large, it can cause performance problems if many generation 2 GCs are triggered. If many large objects are allocated on a temporary basis and you have a large SOH, you could be spending too much time doing GCs. In addition, the allocation cost can really add up if you keep allocating and letting go of really large objects.
+### Array elements with reference types
+- Very large objects on the LOH are usually arrays (it's very rare to have an instance object that's really large)
+- If the elements of an array are reference-rich, it incurs a cost that is not present if the elements are not reference-rich.
+- If the element doesn't contain any references, the garbage collector doesn't need to go through the array at all.
 
-    Array elements with reference types.
+- Allocate a pool of large objects that you reuse instead of allocating temporary ones
 
-    Very large objects on the LOH are usually arrays (it's very rare to have an instance object that's really large). If the elements of an array are reference-rich, it incurs a cost that is not present if the elements are not reference-rich. If the element doesn't contain any references, the garbage collector doesn't need to go through the array at all. For example, if you use an array to store nodes in a binary tree, one way to implement it is to refer to a node's right and left node by the actual nodes:
+TBC
