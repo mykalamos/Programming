@@ -2,14 +2,15 @@
 https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/weak-references
 
 - GC cannot collect object while code can reach that object
-- Strong reference
+  - Strong reference
 
 - A weak reference (WR) permits
-- the GC to collect the object
-- the application to access the object
+  - the GC to collect the object
+  - the application to access the object
 
 - WR is valid only during the indeterminate amount of time until the object is collected when no strong references exist
-- When using WR, the app can still obtain a strong reference to the object, which prevents it from being collected.
+- When using WR, the app can still obtain a strong reference to the object
+  - Prevents collection
 - Risk that GC will get to the object first before a strong reference is reestablished.
 
 - WR are useful for objects that
@@ -29,7 +30,7 @@ e.g. a tree view in a Windows Forms
 ### Long
 - A long WR is retained after the object's ```Finalize``` method is called.
 - This allows the object to be recreated, but the state of the object remains unpredictable.
-- To use a long reference, specify ```true``` in the ```WeakReference``` constructor.
+- To use a long WR, specify ```true``` in the ```WeakReference``` constructor.
 - If no ```Finalize``` method, the short WR functionality applies
 - WR is valid only until the target is collected, which can occur anytime after the finalizer is run
 
