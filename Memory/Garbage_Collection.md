@@ -10,7 +10,7 @@
 - Developer does not have to free memory
 - Efficient allocation on heap
 - Memory reclamation
-- Memory safety - objects cant access allocation of anoher object
+- Memory safety - objects cant access allocation of another object
 
 ## Virtual Memory
 - Each process has own virtual address space
@@ -82,3 +82,7 @@ finalisers will not have been called.
 ## Weak references
 - GC has two special structures: long and short(doesn't track resurrection)
 weak reference tables.
+
+## Reference Counting
+- Advantage: Objects can be claimed as as soon
+- 'Smart pointers'  in C/C++ => ctor/dtor/assignment ops manage the references
