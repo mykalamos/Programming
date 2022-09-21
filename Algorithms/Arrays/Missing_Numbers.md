@@ -1,1 +1,2 @@
 https://www.geeksforgeeks.org/find-the-missing-number/
+https://stackoverflow.com/questions/58052548/find-missing-numbers-in-array-in-ologn-time
