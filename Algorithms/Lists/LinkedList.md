@@ -21,6 +21,13 @@ curr->next = prev
 // Move prev and curr one step forward 
 prev = curr 
 curr = next
+```
+while($current != NULL) {
+ $next = $current->next;
+ $current->next = prev; // rewire here
+ $prev = $current;
+ $current = $next;
+```
 
 ## Recursion
 TODO
