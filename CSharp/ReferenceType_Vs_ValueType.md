@@ -2,7 +2,7 @@
 
 | Reference Type | Value Type |
 | --- | --- |
-| Allocated on managed heap| On thread's stack |
+| Allocated on managed heap| On thread's stack (except fields or stored in array) |
 | Lifetime managed by garbage collector | Reclaimed outside of defining scope |
 | Inherits from ```System.Object```| Also ```System.ValueType``` |
 | Can be inherited if not sealed | Inherently sealed |
