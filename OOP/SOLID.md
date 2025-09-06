@@ -25,4 +25,5 @@ Then Φ(y) should be true for objects y of type S where S is a subtype of T.
 
 ## (D)ependency Inversion
 - *Depend in the direction of abstraction. High level modules should not depend upon low level details.*
+- The general should not depend on the particular
 
