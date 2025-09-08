@@ -46,6 +46,6 @@ foreach (var action in actions)
 ## Summary
 
 - A closure is a function that captures variables from its surrounding scope.
-- C# handles closures by promoting captured variables to a hidden class.
+- C# handles closures by promoting captured variables to a hidden class -> Heap allocation
 
 - Be cautious with closures in loops — use a temporary variable when needed.
