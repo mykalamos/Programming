@@ -5,7 +5,7 @@
 
 ---
 
-## 🧠 Overview
+## Overview
 
 - Objects with a finalizer (`~ClassName()`) are placed in the **Finalization Queue**.
 - When the object becomes unreachable, it is moved to the **F-Reachable Queue**.
@@ -14,7 +14,7 @@
 
 ---
 
-## 🗺️ Mermaid Diagram
+## Lifecycle
 
 ```mermaid
 flowchart TD
@@ -28,3 +28,4 @@ flowchart TD
     H --> C
     F -- No --> I[Eligible for Collection in Next GC]
 ```
+- NB: The `freachable queue` is part of the runtime’s root set — any object on it is considered alive by the GC until finalization completes.

@@ -14,13 +14,9 @@ http://www.albahari.com/threading/part4.aspx#_Interlocked
 | Provided in .NET by | `Thread.MemoryBarrier()`, `Volatile`, `Interlocked`          |
 | Used by whom?       | Low-level concurrent code, lock-free algorithms, runtimes    |
 
-# 🛠 CPU Fence Instructions (Assembly Reference)
+## CPU Fence Instructions
 
-This section contains common CPU fence instructions used for memory ordering in multithreaded code on different architectures.
-
----
-
-## 🧠 x86 / x64 Assembly
+## x86 / x64 Assembly
 
 ```asm
 ; Full memory fence (prevents all load/store reordering)

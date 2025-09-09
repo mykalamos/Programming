@@ -15,8 +15,8 @@
 ## Virtual Memory
 - Each process has own virtual address space
 - 3 states
-  - Free
-  - Reserved
+  - Free - previously committed and returned to OS.
+  - Reserved - No physical (RAM, pagefile) committed yet.
   - Committed - assigned to physical storage
 
 ## Managed heap
